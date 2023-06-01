@@ -161,3 +161,17 @@ for i in arr:
         print("Exist in array")
     if i == 23:
         print("Exist in array")
+
+#Program to remove the duplicate elements and return the new array
+
+def remove_duplicates(arr):
+    # Convert the list to a set to remove duplicates
+    unique_arr = list(set(arr))
+    return unique_arr
+
+# Example usage
+original_list = [1, 2, 3, 4, 2, 3, 5, 6, 4]
+new_list = remove_duplicates(original_list)
+print("Original List:", original_list)
+print("New List (without duplicates):", new_list)
+
